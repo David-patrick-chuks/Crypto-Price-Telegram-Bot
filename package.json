@@ -1,0 +1,26 @@
+{
+  "name": "cryptopricepulsebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsc && node  --no-warnings build/index.js",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Bug_hunter.dev",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11",
+    "dotenv": "^16.5.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3"
+  }
+}

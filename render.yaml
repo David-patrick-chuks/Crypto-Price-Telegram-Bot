@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: crypto-price-bot
+    runtime: node
+    repo: https://github.com/david-patrick-chuks/YOUR_REPO_NAME
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm install && tsc
+    startCommand: node dist/bot.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
