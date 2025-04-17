@@ -1,6 +1,5 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import cron from 'node-cron';
 import { formatPrice } from './utils/format';
 import { PricesResponse } from './interfaces/prices';
 
@@ -16,9 +15,9 @@ if (!TOKEN || !CHAT_ID) {
 /**
  * Fetch cryptocurrency prices from CoinGecko API.
  * 
- * @returns A formatted string containing current prices and changes
+ * @returns A formatted string with prices and 24hr change
  */
-async function getPrices(): Promise<string> {
+export async function getPrices(): Promise<string> {
   const url =
     'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin&vs_currencies=usd&include_24hr_change=true';
 
@@ -34,28 +33,16 @@ async function getPrices(): Promise<string> {
 }
 
 /**
- * Sends a formatted message to a Telegram chat using the Telegram Bot API.
+ * Send a message to the Telegram chat.
  * 
- * @param message - The message to send
+ * @param message - Message to send
  */
-async function postToTelegram(message: string): Promise<void> {
+export async function postToTelegram(message: string): Promise<void> {
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   await axios.post(url, {
     chat_id: CHAT_ID,
     text: message,
-    parse_mode: 'Markdown'
+    parse_mode: 'Markdown',
   });
 }
-
-// Runs the bot every 1 Mins
-
-cron.schedule('*/1 * * * *', async () => {
-  try {
-    const message = await getPrices();
-    await postToTelegram(message);
-    console.log(`[✅ Posted] ${new Date().toLocaleTimeString()}`);
-  } catch (error: any) {
-    console.error(`[❌ Error] ${new Date().toLocaleTimeString()}:`, error.message);
-  }
-});

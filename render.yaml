@@ -1,8 +1,8 @@
 services:
-  - type: worker
+  - type: web
     name: crypto-price-bot
     runtime: node
-    repo: https://github.com/david-patrick-chuks/YOUR_REPO_NAME
+    repo: https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot
     plan: free
     region: oregon
     branch: main
