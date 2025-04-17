@@ -5,7 +5,6 @@
 [![Contributors](https://img.shields.io/github/contributors/david-patrick-chuks/Crypto-Price-Telegram-Bot)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/david-patrick-chuks/Crypto-Price-Telegram-Bot?label=forks)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/network)
 [![Stars](https://img.shields.io/github/stars/david-patrick-chuks/Crypto-Price-Telegram-Bot?style=social)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot)
-[![Version](https://img.shields.io/github/tag/david-patrick-chuks/Crypto-Price-Telegram-Bot)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/tags)
 
 A simple Node.js + TypeScript bot that fetches live cryptocurrency prices (BTC, ETH, SOL, BNB) every **1 minute** and sends updates to a Telegram chat using the Telegram Bot API.
 
