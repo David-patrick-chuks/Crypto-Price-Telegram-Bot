@@ -1,8 +1,6 @@
 # 🟡 Crypto Price Telegram Bot
 
-![Build Status](https://img.shields.io/github/workflow/status/david-patrick-chuks/Crypto-Price-Telegram-Bot/Deploy?label=Build%20Status&logo=github)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
-[![David DM](https://img.shields.io/david/david-patrick-chuks/Crypto-Price-Telegram-Bot)](https://david-dm.org/david-patrick-chuks/Crypto-Price-Telegram-Bot)
 [![Issues](https://img.shields.io/github/issues/david-patrick-chuks/Crypto-Price-Telegram-Bot)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/issues)
 [![Contributors](https://img.shields.io/github/contributors/david-patrick-chuks/Crypto-Price-Telegram-Bot)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/david-patrick-chuks/Crypto-Price-Telegram-Bot?label=forks)](https://github.com/david-patrick-chuks/Crypto-Price-Telegram-Bot/network)
