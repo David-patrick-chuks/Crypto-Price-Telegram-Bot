@@ -105,6 +105,7 @@ services:
 ├── .env                      # Env vars for the bot
 ├── package.json
 ├── tsconfig.json
+├── Dockerfile                # Docker configuration file
 └── README.md (optional)
 
 ```
