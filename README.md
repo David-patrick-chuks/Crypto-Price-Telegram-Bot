@@ -1,4 +1,3 @@
-
 # 🟡 Crypto Price Telegram Bot
 
 A simple Node.js + TypeScript bot that fetches live cryptocurrency prices (BTC, ETH, SOL, BNB) every **1 minute** and sends updates to a Telegram chat using the Telegram Bot API.
@@ -101,7 +100,7 @@ services:
 │   │   └── prices.ts         # Contains interfaces & types
 │   ├── utils/
 │   │   └── format.ts         # Price formatting helper
-│   ├── bot.ts    
+│   ├── bot.ts
 │   └── server.ts               # Main bot logic
 ├── .env                      # Env vars for the bot
 ├── package.json
